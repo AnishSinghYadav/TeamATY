@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intern Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="dashboard">
+        <h1>Welcome, Intern!</h1>
+        <p>Your progress and reports will be displayed here.</p>
+
+        <!-- Example Intern Data -->
+        <div class="card">
+            <h3>Company: {{ intern['company_name'] }}</h3>
+            <p>Start Date: {{ intern['start_date'] }}</p>
+            <p>Stipend: {{ intern['stipend_amount'] }}</p>
+        </div>
+
+        <h3>Internship Reports</h3>
+        <div class="report-card">
+            <h4>Fortnightly Report</h4>
+            <p>Status: Submitted</p>
+            <button>View Report</button>
+        </div>
+        <div class="report-card">
+            <h4>Assignment from Mentor</h4>
+            <p>Status: Pending</p>
+            <button>View Assignment</button>
+        </div>
+        <div class="report-card">
+            <h4>Industry Mentor Evaluation</h4>
+            <p>Status: Pending</p>
+            <button>Submit Evaluation</button>
+        </div>
+
+        <a href="/">Back to Home</a>
+    </div>
+</body>
+</html>

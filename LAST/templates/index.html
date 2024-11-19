@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVVV Internship Management System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>SVVV Internship Management System</h1>
+        <div class="roles">
+            <div class="role" id="admin" onclick="window.location.href='{{ url_for('login', role='admin') }}'">
+                <p>ADMIN</p>
+            </div>
+            <div class="role" id="mentor" onclick="window.location.href='{{ url_for('login', role='mentor') }}'">
+                <p>MENTOR</p>
+            </div>
+            <div class="role" id="intern" onclick="window.location.href='{{ url_for('login', role='intern') }}'">
+                <p>INTERN</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

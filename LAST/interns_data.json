@@ -1,0 +1,25 @@
+{
+    "intern_1": {
+        "name": "Anish Singh Yadav",
+        "company_name": "TechCorp",
+        "start_date": "2024-06-01",
+        "stipend_amount": 15000,
+        "external_mentor": {
+            "name": "Mr. Smith",
+            "contact": "1234567890",
+            "email": "smith@techcorp.com"
+        },
+        "reports": {
+            "fortnightly": [
+                "Report 1: Completed module A",
+                "Report 2: Working on module B"
+            ],
+            "assignments": [
+                "Assignment 1: Data analysis task",
+                "Assignment 2: Code review"
+            ],
+            "evaluation": "Industry mentor evaluation pending"
+        },
+        "status": "Active"
+    }
+}

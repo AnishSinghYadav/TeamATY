@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="dashboard">
+        <h1>Welcome, Admin!</h1>
+        <p>You can manage the interns' progress and reports here.</p>
+
+        <!-- List of All Interns -->
+        <div class="intern-list">
+            {% for intern in interns.values() %}
+                <div class="intern-card">
+                    <h3>{{ intern['company_name'] }}</h3>
+                    <p>Start Date: {{ intern['start_date'] }}</p>
+                    <p>Stipend: {{ intern['stipend_amount'] }}</p>
+                    <button onclick="window.location.href='#'">View Reports</button>
+                    <button onclick="window.location.href='#'">Assign Mentor</button>
+                </div>
+            {% endfor %}
+        </div>
+
+        <a href="/">Back to Home</a>
+    </div>
+</body>
+</html>
